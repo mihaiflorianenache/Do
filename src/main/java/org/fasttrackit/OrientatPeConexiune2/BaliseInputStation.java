@@ -18,6 +18,7 @@ public class BaliseInputStation {
 
             //socket know that server accepted the connection to 1904 port
             socketEVC = serverSocketEVC.accept();
+            socketEVC.close();
         }catch(Exception exception){
             System.out.println("The connection can not be achieved because of the error "+exception.getMessage());
         }
